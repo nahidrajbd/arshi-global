@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font-sans: 'DM Sans', Arial, sans-serif; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { color: #304132; background: #fff; font-family: var(--font-sans); }
+.serif { font-family: 'Playfair Display', Georgia, serif; }
+.grid-dots { background-image: radial-gradient(#b42a1d22 1px, transparent 1px); background-size: 18px 18px; }
+.hero-glow { background: radial-gradient(circle at 65% 45%, #ed927940, transparent 38%); }
+.shimmer { position: relative; overflow: hidden; }
+.shimmer:after { content: ''; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(105deg, transparent 40%, #fff6 50%, transparent 60%); transition: transform .7s; }
+.shimmer:hover:after { transform: translateX(100%); }
+summary::-webkit-details-marker { display: none; }
